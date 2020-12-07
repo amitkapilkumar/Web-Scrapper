@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.io.IOException;
+
 @RestController
 public class CrawlerController {
 
@@ -19,7 +21,7 @@ public class CrawlerController {
 
     @PostMapping(path = "/crawl", produces= MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
     @ResponseStatus(HttpStatus.OK)
-    public CrawlResponse crawl(@RequestBody CrawlRequest crawlRequest) {
+    public CrawlResponse crawl(@RequestBody CrawlRequest crawlRequest) throws IOException {
         return crawlService.crawl(crawlRequest.getUrl());
     }
 }
