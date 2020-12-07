@@ -25,5 +25,5 @@ By any Web client or postman, above endpoint can be called with the body :
 ```
 
 ## Deployment / Execution
-Repo has executable jar file **Web-Scrapper-0.0.1-SNAPSHOT.jar**.
-Which can be executed as **java -jar Web-Scrapper-0.0.1-SNAPSHOT.jar**
+- Repo has executable jar file **Web-Scrapper-0.0.1-SNAPSHOT.jar**.
+- Which can be executed as **java -jar Web-Scrapper-0.0.1-SNAPSHOT.jar**
