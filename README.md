@@ -18,10 +18,11 @@ be crawled again for external, internal and images link. aftet that it will prod
 - Crawl URL : POST http://localhost:8080/crawl
 
 By any Web client or postman, above endpoint can be called with the body :
+```
 {
-	"url": "https://wiprodigital.com/"
+	"url": "https://www.google.com/"
 }
-
+```
 
 ## Deployment / Execution
 Repo has executable jar file **Web-Scrapper-0.0.1-SNAPSHOT.jar**.
