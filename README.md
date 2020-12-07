@@ -12,6 +12,7 @@ be crawled again for external, internal and images link. aftet that it will prod
 - Additional logic needs to be added to support multiple depth crawling.
 - text content can also be parsed and stored in db / files, for having simple search capability.
 - Addtional integration test suite or  Refactroing can be done provided with additional time.
+- Addtional thin client / webpage could have been added to manually test the crawl response.
 
 
 ## API / endpoint
@@ -23,6 +24,7 @@ By any Web client or postman, above endpoint can be called with the body :
 	"url": "https://www.google.com/"
 }
 ```
+Ex. request via cURL : curl -v --header "Content-Type: application/json" -d "{\"url\":\"https://wiprodigital.com/\"}" http://localhost:8080/crawl
 
 ## Deployment / Execution
 - Repo has executable jar file **Web-Scrapper-0.0.1-SNAPSHOT.jar**.
